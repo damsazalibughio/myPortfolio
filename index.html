@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damsaz Portfolio</title>
+    <!-- my portfolio cv -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiveStyle.css">
+</head>
+
+<body onload="jsInitials()">
+    <div class="container">
+        <header>
+            <nav id="navbar">
+                <div class="navbar-container">
+                    <button class="humburger-btn" onclick="openNavbar()">☰</button>
+                    <div class="navbar-nav" id="myNavbar">
+                        <div> <button class="close-button" onclick="closeNavbar()"> &times; </button></div>
+
+                        <ul>
+                            <li class="active" data="home"><a href="#">Home </a></li>
+                            <li class="" data="about">
+                                <a href="#" class="">About </a>
+                            </li>
+                            <!-- <li><a>Education </a></li> -->
+                            <li class="" data="skills"><a href="#" onclick="getProgressBar()"> Skills </a></li>
+                            <li class="" data="portfolio"><a href="#">Portfolios </a></li>
+                            <li class="" data="coding-history"><a href="#">Road to Glory </a></li>
+                            <!-- <li>Testimonials</li> -->
+                            <li class="" data="contact"><a href="#">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <nav class="sidebar">
+                <div class="sidebar-menu">
+                    <div class="nav-card">
+                        <div class="profileImage1">
+                            <img src="profilepic1.jpg" alt="profile Image">
+                        </div>
+                        <div class="name">Damsaz Ali</div>
+                        <p class="jobTitle">Front End Developer</p>
+                    </div>
+                    <div class="sidebar-nav">
+                        <ul>
+                            <li class="active" data="home"><a href="#home">Home </a>
+                                <!-- <span class="hover-box"></span> -->
+                            </li>
+                            <li class="" data="about">
+                                <a href="#about" class="">About </a>
+                                <!-- <span class="hover-box"></span> -->
+                            </li>
+                            <!-- <li><a>Education </a></li> -->
+                            <li class="" data="skills"><a href="#skills" onclick="getProgressBar()"> Skills </a></li>
+                            <li class="" data="portfolio"><a href="#portfolio">Portfolios </a></li>
+                            <li class="" data="coding-history"><a href="#coding-history">Road to Glory </a></li>
+                            <!-- <li>Testimonials</li> -->
+                            <li class="" data="contact"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="sub-main">
+                <section id="home">
+                    <div class="home-container">
+                        <div class="introduction">
+                            <h3>Hello, I'M <span>Damsaz Ali</span></h3>
+                            <h1 class="">Frontend Developer</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <div class="btns">
+                                <button class="button-1 link-list" data="contact">Hire Me</button>
+                                <button class="button-2">Get Resume</button>
+                            </div>
+                        </div>
+                        <div class="profileImage2">
+                            <img src="profilepic2.jpg" alt="image">
+                        </div>
+                    </div>
+
+
+                </section>
+                <section id="about">
+                    <div class="section-container">
+                        <div class="card-header">
+                            <h3>About Me</h3>
+                            <p><small>My Bio Details</small></p>
+                            <div class="header-ribbon">
+                                <div class="ribbon-line">
+                                    <div class="ribbon-square"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-card-body">
+                            <p class="job-description">Frontend developer and designer with specializations in mobile responsive web designs, building websites with utmost efficiency. Strong professional skills HTML, CSS, Figma, Bootstrap, Css Transitions and Animations.
+                            </p>
+                            <h4>Here are Few Highlights</h4>
+
+                            <ul>
+                                <li> Mobile Responsive Design</li>
+                                <li> HTML Email Template and Signatures designs</li>
+                                <li> Landing Page Design</li>
+                                <li> Full Website Design</li>
+                                <li> Mobile Responsive Design</li>
+                                <li> Figma to HTML </li>
+                                <li> Bootstrap 5 </li>
+                                <li> CSS Transitions and Animations </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills">
+                    <div class="section-container">
+                        <div class="card-header">
+                            <h3>Programing Skills</h3>
+                            <div class="header-ribbon">
+                                <div class="ribbon-line">
+                                    <div class="ribbon-square"></div>
+                                </div>
+                            </div>
+                            <p class=""><small>I have the handful experience of following skill set click on skills to know how i design</small></p>
+                        </div>
+                        <div class="programing-card-body">
+                            <div class="skill-set">
+                                <p>SKILLS</p>
+                                <ul>
+                                    <li>
+                                        <p>Figma</p>
+                                        <div class="skill-set-progress">
+                                            <div class="progress-done" data-done='70'>70%</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>SCSS</p>
+                                        <div class="skill-set-progress">
+                                            <div class="progress-done" data-done='70'>70%</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>Bootstrap</p>
+                                        <div class="skill-set-progress">
+                                            <div class="progress-done" data-done='70'>70%</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>Javascript , React</p>
+                                        <div class="skill-set-progress">
+                                            <div class="progress-done" data-done='70'>70%</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="expertise">
+                                <p>EXPERTISE</p>
+                                <ul>
+                                    <li>Mobile Responsive Design</li>
+                                    <li>Landing Page Design</li>
+                                    <li>Full website Design</li>
+                                    <li>HTML Email Template</li>
+                                    <li>HTML Email Signature</li>
+                                    <li>grid and layout</li>
+                                    <li>Flex Box</li>
+                                    <li>Transitions </li>
+                                    <li>Animations</li>
+                                    <li>Javascript</li>
+                                    <li>ECMA Script6</li>
+                                    <li>React</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="portfolio">
+                    <div class="section-container">
+                        <div class="card-header">
+                            <h3>Portfolios</h3>
+                            <div class="header-ribbon">
+                                <div class="ribbon-line">
+                                    <div class="ribbon-square"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-tab">
+                            <ul>
+                                <li id="show-all">Show All</li>
+                                <li id="ui-design">UI Designs</li>
+                                <li id="responsive">Mobile Responsive</li>
+                                <li id="bootstrap">Bootstrap</li>
+                                <li id="react">React</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-body">
+
+                            <div class="img-container" portfolio-filter="ui-design">
+                                <img src="images/tea.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="code-view">
+                                        <ul>
+                                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="img-container" portfolio-filter="responsive">
+                                <img src="images/tea.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="code-view">
+                                        <ul>
+                                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-container" portfolio-filter="bootstrap">
+                                <img src="images/tea.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="code-view">
+                                        <ul>
+                                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-container" portfolio-filter="react">
+                                <img src="images/tea.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="code-view">
+                                        <ul>
+                                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-container" portfolio-filter="react">
+                                <img src="images/tea.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="code-view">
+                                        <ul>
+                                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-container" portfolio-filter="react">
+                                <img src="images/tea.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="code-view">
+                                        <ul>
+                                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="show-modal">
+                            <button id="portfolio-btn" class="button-4">More...</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="road-to-glory" id="coding-history">
+
+                    <div class="section-container">
+                        <div class="card-header">
+                            <h3>Road to Glory</h3>
+                            <p><small>Keep the Coding Dream Alive</small></p>
+                            <div class="header-ribbon">
+                                <div class="ribbon-line">
+                                    <div class="ribbon-square"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-container">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-item-content">
+                                        <span class="tag">Tag</span>
+                                        <time>12:00 Am</time>
+                                        <p class="text">Lorem ipsum, dolor sit amet elit.
+                                        </p>
+                                        <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-item-content">
+                                        <span class="tag">Tag</span>
+                                        <time>12:00 Am</time>
+                                        <p class="text">Lorem ipsum, dolor sit amet elit.
+                                        </p>
+                                        <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-item-content">
+                                        <span class="tag">Tag</span>
+                                        <time>12:00 Am</time>
+                                        <p class="text">Lorem ipsum, dolor sit amet elit.
+                                        </p>
+                                        <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="show-modal">
+                            <button id="coding-history-btn" class="button-4">More...</button>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section id="contact">
+                    <div class="section-container">
+                        <div class="contact-card">
+                            <div class="socials">
+                                <div class="social-card-header">
+                                    <h3>Contact Me</h3>
+                                    <p><small>Lets Keep in Touch</small></p>
+                                </div>
+                                <ul>
+                                    <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <div class="paper-plane-icon">
+                                    <i class="fa fa-paper-plane"></i>
+                                </div>
+                            </div>
+
+                            <div class="contact-form">
+                                <form onsubmit="sendEmail()" return false>
+                                    <div class="form-elements">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-elements">
+                                        <label for="name">Email</label>
+                                        <input type="text" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-elements">
+                                        <label for="name">Message</label>
+                                        <textarea rows="4" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="btn-style">
+                                        <button class="button-3" style="padding: 5px;">
+                                        Send
+                                    </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+    </div>
+    <div id="portfolio-modal" class="modal">
+        <div> <button class="close-portfolio-btn">x</button></div>
+        <div class="portfolio-tab">
+            <ul>
+                <li id="show-all">Show All</li>
+                <li id="ui-design">UI Designs</li>
+                <li id="responsive">Mobile Responsive</li>
+                <li id="bootstrap">Bootstrap</li>
+                <li id="react">React</li>
+            </ul>
+        </div>
+        <div class="portfolio-body">
+
+            <div class="img-container" portfolio-filter="ui-design">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="ui-design">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="ui-design">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container" portfolio-filter="responsive">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="responsive">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="responsive">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="bootstrap">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="bootstrap">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="react">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="react">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container" portfolio-filter="react">
+                <img src="images/tea.jpg" alt="">
+                <div class="overlay">
+                    <div class="code-view">
+                        <ul>
+                            <li> <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="coding-history-model" class="modal">
+        <div> <button class="close-coding-btn">x</button></div>
+        <div class="">
+            <div class="card-header">
+                <h3>Road to Glory</h3>
+                <p><small>Keep the Coding Dream Alive</small></p>
+                <div class="header-ribbon">
+                    <div class="ribbon-line">
+                        <div class="ribbon-square"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <span class="tag">Tag</span>
+                            <time>12:00 Am</time>
+                            <p class="text">Lorem ipsum, dolor sit amet elit.
+                            </p>
+                            <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <span class="tag">Tag</span>
+                            <time>12:00 Am</time>
+                            <p class="text">Lorem ipsum, dolor sit amet elit.
+                            </p>
+                            <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <span class="tag">Tag</span>
+                            <time>12:00 Am</time>
+                            <p class="text">Lorem ipsum, dolor sit amet elit.
+                            </p>
+                            <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <span class="tag">Tag</span>
+                            <time>12:00 Am</time>
+                            <p class="text">Lorem ipsum, dolor sit amet elit.
+                            </p>
+                            <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <span class="tag">Tag</span>
+                            <time>12:00 Am</time>
+                            <p class="text">Lorem ipsum, dolor sit amet elit.
+                            </p>
+                            <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item-content">
+                            <span class="tag">Tag</span>
+                            <time>12:00 Am</time>
+                            <p class="text">Lorem ipsum, dolor sit amet elit.
+                            </p>
+                            <a href="https://github.com/damsazalibughio" target="blank"><i class="fa fa-git-square"></i></a>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="smptpjscode.js"></script>
+</body>
+
+</html>
